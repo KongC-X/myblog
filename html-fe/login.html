@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="login.css">
+    <title>用户登录</title>
+</head>
+<body>
+    <div id="top"></div>
+    <div class="page-wrap">
+        <div class="w">
+            <div class="user-con">
+                <div class="user-title">用户登录</div>
+                <div class="user-box">
+                    <div class="user-item">
+                        <label class="user-label" for="">
+                            <i class="fa fa-user"></i>
+                        </label>
+                        <input class="user-content" id="username" placeholder="请输入用户名" autocomplete="off">
+                    </div>
+                    <div class="user-item">
+                        <label class="user-label" for="password">
+                            <i class="fa fa-lock"></i>
+                        </label>
+                        <input type="password" class="user-content" id="password" placeholder="请输入密码" autocomplete="off">
+                    </div>
+                    <a class="btn btn-submit" id="submit">登录</a>
+                </div>  
+            </div>                
+        </div>
+    </div>
+    
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script>
+        // 发送 post 请求
+        function post(url, data = {}) {
+            return $.ajax({
+                type: 'post',
+                url,
+                data: JSON.stringify(data),
+                contentType: "application/json",
+            })
+        }
+
+        $('a').click(() => {
+            const username = $('#username').val()
+            const password = $('#password').val()
+            const url = '/api/user/login'
+            const data = {
+                username,
+                password
+            }
+            post(url, data).then(res => {
+                if (res.errno === 0) {
+                    // 登录成功
+                    location.href = './admin.html'
+                } else {
+                    // 登录失败
+                    alert(res.message)
+                }
+            })
+        })
+    </script>
+</body>
+</html>

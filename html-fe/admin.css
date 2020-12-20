@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+#new {
+  width: 400px;
+  height: 50px;
+  color: rgb(231, 110, 110);
+}
+
+.btn {
+  padding: 30px;
+  text-align: center;
+}
+
+a {
+  text-decoration-line: none;
+  color: #000;
+}
+
+a:hover {
+  color: rgb(231, 110, 110);
+}
+
+.search {
+  padding-top: 20px;
+  padding-left: 500px;
+  padding-bottom: 20px;
+}
+
+#text-keyword {
+  width: 500px;
+  height: 40px;
+}
+
+#btn-search {
+  width: 100px;
+  height: 50px;
+  color: rgb(231, 110, 110);
+}
+
+h1 {
+  border-bottom: 1px solid #ccc;
+  color: rgb(231, 110, 110);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tb {
+  padding-left: 500px;
+  padding-top: 20px;
+}
+
+table {
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 2;
+}
+
+table th {
+  background-color: #f1f1f1;
+  width: 300px;
+}
+
+table td:nth-child(1) {
+  width: 300px;
+}
+
+/* table td:nth-child(2) {
+  width: 300px;
+} */

@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* line-height: 1; */
+}
+
+/* .index {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+} */
+
+h1 {
+  color: rgb(231, 110, 110);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(231, 110, 110);
+}
+
+.title-wrapper {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+.title-wrapper .title {
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.title-wrapper .info-wrapper {
+  padding-left: 30px;
+}
+
+.title-wrapper .info-wrapper span,
+.title-wrapper .info-wrapper a {
+  font-size: 14px;
+  color: #999;
+  padding-right: 5px;
+}
+
+.title-wrapper .info-wrapper a:hover {
+  color: rgb(231, 110, 110);
+}

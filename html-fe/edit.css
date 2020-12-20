@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+h1 {
+  border-bottom: 1px solid #ccc;
+  color: rgb(231, 110, 110);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.title-wrapper {
+  margin: 30px;
+  text-align: center;
+}
+
+.content-wrapper {
+  text-align: center;
+}
+
+.title-wrapper input {
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 700px;
+  line-height: 3;
+  height: 50px;
+  font-size: 20px;
+}
+
+.content-wrapper textarea {
+  width: 700px;
+  height: 400px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.btn {
+  padding-left: 420px;
+  padding-top: 20px;
+}
+
+#btn-update {
+  width: 700px;
+  color: rgb(231, 110, 110);
+  height: 50px;
+}

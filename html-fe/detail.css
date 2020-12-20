@@ -1,0 +1,46 @@
+body {
+  margin: 0 20px;
+  line-height: 1;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+h1 {
+  color: rgb(231, 110, 110);
+}
+
+span a:hover {
+  color: rgb(231, 110, 110);
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+
+.info-container span,
+.info-container a {
+  /* float: right; */
+  font-size: 14px;
+  color: #999;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+.content-wrapper {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#content {
+  line-height: 2;
+}
